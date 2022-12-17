@@ -6,7 +6,7 @@ COPY requirements.txt /requirements.txt
 
 RUN cd /
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-RUN mkdir /MPD-AUTOFILTER
-WORKDIR /MPD-AUTOFILTER
+RUN mkdir /AutoFilter-Bot
+WORKDIR /AutoFilter-Bot
 COPY start.sh /start.sh
 CMD ["/bin/bash", "/start.sh"]
