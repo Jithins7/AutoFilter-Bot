@@ -151,7 +151,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('❕ 𝗥𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝗠𝗼𝘃𝗶𝗲 𝗼𝗿 𝗦𝗲𝗿𝗶𝗲𝘀 𝗡𝗼𝘁 𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 ❕\n\n❌𝖮𝖳𝖳 𝗈𝗋 𝖣𝖵𝖣 𝖭𝗈𝗍 𝖱𝖾𝗅𝖾𝖺𝗌𝖾𝖽❌\n‼️𝖳𝗒𝗉𝖾 𝖭𝖺𝗆𝖾 𝖶𝗂𝗍𝗁 𝖸𝖾𝖺𝗋‼️\n\n🔎𝖬𝗈𝗏𝗂𝖾 𝖨𝗌 𝖭𝗈𝗍 𝖠𝗏𝖺𝗂𝗅𝖺𝖻𝗅𝖾 𝗂𝗇 𝗍𝗁𝖾 𝖽𝖺𝗍𝖺𝖻𝖺𝗌𝖾 𝖱𝖾𝗉𝗈𝗋𝗍 𝗍𝗈 𝖠𝖽𝗆𝗂𝗇🔎\n\n📥 𝗥𝗲𝗽𝗼𝗿𝘁 𝘁𝗼 𝗔𝗱𝗺𝗶𝗻 𝗕𝘆 📥\n@Jithis7')
+            k = await query.message.edit('❕ 𝗥𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝗠𝗼𝘃𝗶𝗲 𝗼𝗿 𝗦𝗲𝗿𝗶𝗲𝘀 𝗡𝗼𝘁 𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 ❕\n\n❌𝖮𝖳𝖳 𝗈𝗋 𝖣𝖵𝖣 𝖭𝗈𝗍 𝖱𝖾𝗅𝖾𝖺𝗌𝖾𝖽❌\n‼️𝖳𝗒𝗉𝖾 𝖭𝖺𝗆𝖾 𝖶𝗂𝗍𝗁 𝖸𝖾𝖺𝗋‼️\n\n🔎𝖬𝗈𝗏𝗂𝖾 𝖨𝗌 𝖭𝗈𝗍 𝖠𝗏𝖺𝗂𝗅𝖺𝖻𝗅𝖾 𝗂𝗇 𝗍𝗁𝖾 𝖽𝖺𝗍𝖺𝖻𝖺𝗌𝖾 𝖱𝖾𝗉𝗈𝗋𝗍 𝗍𝗈 𝖠𝖽𝗆𝗂𝗇🔎\n\n📥 𝗥𝗲𝗽𝗼𝗿𝘁 𝘁𝗼 𝗔𝗱𝗺𝗶𝗻 𝗕𝘆 📥\n@im_goutham_josh')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -365,7 +365,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f_caption
         if f_caption is None:
             f_caption = f"{files.file_name}"
-        buttons = InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️𝐄𝐋𝐃𝐎𝐑𝐀𝐃𝐎🚬', url='https://t.me/wudixh') ] ] )
+        buttons = InlineKeyboardMarkup( [ [ InlineKeyboardButton('ElDORADO🚬', url='https://t.me/wudixh') ] ] )
 
         try:
             if AUTH_CHANNEL and not await is_subscribed(client, query):
@@ -379,7 +379,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     chat_id=query.from_user.id,
                     file_id=file_id,
                     caption=f_caption,
-                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️𝐄𝐋𝐃𝐎𝐑𝐀𝐃𝐎🚬', url='https://t.me/wudixh') ] ] ),
+                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('ElDORADO🚬', url='https://t.me/wudixh') ] ] ),
                     protect_content=True if ident == "filep" else False 
                 )
                 await query.answer('𝖢𝗁𝖾𝖼𝗄 𝖯𝖬, 𝖨 𝗁𝖺𝗏𝖾 𝗌𝖾𝗇𝗍 𝖿𝗂𝗅𝖾𝗌 𝗂𝗇 𝖯𝖬', show_alert=True)
@@ -411,7 +411,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f_caption = f_caption
         if f_caption is None:
             f_caption = f"{title}"
-        buttons = InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️𝐄𝐋𝐃𝐎𝐑𝐀𝐃𝐎🚬', url='https://t.me/wudixh') ] ] )
+        buttons = InlineKeyboardMarkup( [ [ InlineKeyboardButton('ElDORADO🚬', url='https://t.me/wudixh') ] ] )
         
         
         await query.answer()
@@ -419,7 +419,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             chat_id=query.from_user.id,
             file_id=file_id,
             caption=f_caption,
-            reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️𝐄𝐋𝐃𝐎𝐑𝐀𝐃𝐎🚬', url='https://t.me/wudixh') ] ] ),
+            reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('ElDORADO🚬', url='https://t.me/wudixh') ] ] ),
             protect_content=True if ident == 'checksubp' else False
         )
     elif query.data == "pages":
@@ -429,7 +429,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
             InlineKeyboardButton('🔍 𝖲𝖾𝖺𝗋𝖼𝗁', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝗋', url='https://t.me/Jithis7')
+            InlineKeyboardButton('🤖 𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝗋', url='https://t.me/im_goutham_josh')
         ], [
             InlineKeyboardButton('ℹ️ 𝖧𝖾𝗅𝗉', callback_data='help'),
             InlineKeyboardButton('😊 𝖠𝖻𝗈𝗎𝗍', callback_data='about')
