@@ -51,27 +51,41 @@
 * Check [info.py](https://github.com/ritheshrkrm/PiroAutoFilterBot/blob/master/info.py) for more
 
 
-## Deploy
-You can deploy this bot anywhere.
+### Deployment Methods
+<details><summary>Deploy To Heroku</summary>
+<p>
+<br>
+<a href="https://heroku.com/deploy?template=https://github.com/ritheshrkrm/PiroAutoFilterBot">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy To Heroku">
+</a>
+</p>
+</details>
 
-<i>**[Watch Deploying Tutorial...](https://youtu.be/1G1XwEOnxxo)**</i>
+<details><summary>Deploy To Koyeb</summary>
+<b>The fastest way to deploy the application is to click the Deploy to Koyeb button below.</b>
 
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=https://github.com/GouthamSER/AutoFilter-Bot&branch=main&name=filterbot)
+</details>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ritheshrkrm/PiroAutoFilterBot)
+<details><summary>Deploy on Railway</summary>
+<a href="https://railway.app/new/template/y0ryFO">
+<img src="https://railway.app/button.svg" alt="Deploy on Railway">
+</a>
+</details>
 
-#### Deploy on Koyeb
-
-The fastest way to deploy the application is to click the **Deploy to Koyeb** button below.
-
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/GouthamSER/AutoFilter-Bot&branch=master&name=AutoFilter-Bot)
-
-
-
+<details><summary> Deploy To Okteto </summary>
+<br>
+<p>
+<a href="https://cloud.okteto.com/deploy?repository=https://github.com/GouthamSER/AutoFilter-Bot&branch=main">
+  <img src="https://okteto.com/develop-okteto.svg" alt="Deploy to Okteto">
+</a>
+</p>
+</details>
 
 <details><summary>Deploy To VPS</summary>
 <p>
 <pre>
-git clone https://github.com/ritheshrkrm/PiroAutoFilterBot
+git clone https://github.com/GouthamSER/AutoFilter-Bot
 # Install Packages
 pip3 install -U -r requirements.txt
 Edit info.py with variables as given below then run bot
